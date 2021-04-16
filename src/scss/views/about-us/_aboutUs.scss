@@ -1,0 +1,33 @@
+.about-us {
+  .top-bar {
+    width: 100%;
+    background-color: $primary-color;
+    height: 5em;
+    border-radius: 1em;
+    padding: 1em;
+    color: $white;
+  }
+
+  .section_1 {
+    display: flex;
+    margin-top: 1em;
+
+    .content {
+      background-color: transparent;
+    }
+
+    h5 {
+      font-size: 1.8rem;
+      color: $secondary-color;
+    }
+
+    p {
+      color: $secondary-color;
+      font-size: 0.9rem;
+    }
+
+    img {
+      width: 10em;
+    }
+  }
+}

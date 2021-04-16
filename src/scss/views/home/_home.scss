@@ -1,0 +1,6 @@
+.home {
+  display: grid;
+  grid-template-rows: calc(50vh - 1.5em) calc(50vh - 1.5em);
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "cont product" "clients list";
+}

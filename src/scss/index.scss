@@ -1,0 +1,17 @@
+// Settings
+@import "config/colors";
+@import "config/reset";
+@import "config/scrollbar";
+
+// Views
+@import "views/main";
+@import "views/shared/navbar";
+@import "views/home/home";
+@import "views/home/content";
+@import "views/home/product";
+@import "views/home/clients";
+@import "views/home/listProducsts";
+@import "views/products/products";
+@import "views/news/news";
+@import "views/news/mainNews";
+@import "views/about-us/aboutUs";

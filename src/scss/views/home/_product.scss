@@ -1,0 +1,51 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-color;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+  border-radius: 1em;
+
+  position: relative;
+
+  &:before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em 0 0 2em;
+    content: "Cubrebocas 2050 XS";
+    position: absolute;
+    width: 15vw;
+    height: 2em;
+    background-color: $senary-color;
+    color: $primary-ft;
+    right: 0;
+    top: 1.2em;
+  }
+
+  img {
+    height: 35vh;
+  }
+
+  .move {
+    align-self: flex-end;
+  }
+
+  button {
+    margin: 0 0.5em;
+    background-color: transparent;
+    cursor: pointer;
+
+    i {
+      color: $secondary-ft;
+      font-size: 2.2rem;
+
+      &:hover {
+        color: $primary-color;
+        transition-duration: 0.3s;
+      }
+    }
+  }
+}

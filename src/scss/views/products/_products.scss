@@ -1,0 +1,93 @@
+.products {
+  .top-bar {
+    grid-area: topb;
+    width: 100%;
+    background-color: $primary-color;
+    height: 5em;
+    border-radius: 1em;
+    padding: 1em;
+    color: $white;
+  }
+
+  .prod {
+    grid-area: prod;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    border-radius: 0 1em 1em 1em;
+    margin: 1em 0;
+    margin-top: 3em;
+    width: 30em;
+    height: 25em;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 2em;
+      border-radius: 1em 1em 0 0;
+      width: 18em;
+      background-color: $secondary-color;
+      top: -2em;
+      left: 0;
+    }
+
+    &:after {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 2em 2em 0;
+      content: "Cubrebocas 2050 XS";
+      position: absolute;
+      width: 15vw;
+      height: 2em;
+      background-color: $senary-color;
+      color: $primary-ft;
+      left: 0;
+      top: 1.2em;
+    }
+
+    img {
+      width: 20em;
+      height: 20em;
+    }
+
+    .move {
+      align-self: flex-start;
+      margin-right: 1em;
+    }
+
+    button {
+      margin: 0 0.5em;
+      background-color: transparent;
+      cursor: pointer;
+
+      i {
+        color: $secondary-ft;
+        font-size: 2.2rem;
+
+        &:hover {
+          color: $primary-color;
+          transition-duration: 0.3s;
+        }
+      }
+    }
+  }
+
+  .desc {
+    grid-area: prod;
+    width: 20vw;
+    height: 20vh;
+    background-color: $secondary-color;
+  }
+
+  .categories {
+    grid-area: filt;
+  }
+
+  .prod-list {
+    grid-area: listprod;
+  }
+}
